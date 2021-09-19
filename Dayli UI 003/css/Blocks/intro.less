@@ -1,0 +1,37 @@
+// main: ../style.less
+
+/* Intro */
+.intro {
+    display: flex;
+    height: 100vh;
+    padding-top: 98px;
+    background: linear-gradient(to right, #a60d0d, #f51717, #a60d0d);
+}
+
+.intro_inner {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro_title {
+    margin: 0 0 80px;
+    font-size: 24px;
+}
+
+.intro_subtitle {
+    margin-bottom: 24px;
+    font-size: 36px;
+}
+
+@media (max-width: 623px) {
+    .intro {
+        padding-top: 32px;
+    }
+    .intro_title {
+        margin-bottom: 24px;
+    }
+    .intro_subtitle {
+        margin-bottom: 56px;
+    }
+}

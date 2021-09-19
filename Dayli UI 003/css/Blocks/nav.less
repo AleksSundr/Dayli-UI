@@ -1,0 +1,54 @@
+// main: ../style.less
+
+/* Nav */
+.nav {
+    display: flex;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 12px;
+}
+
+.nav_link {
+    margin-left: 64px;
+    color: #fff;
+    text-decoration: none;
+    transition: font-size 0.2s linear;
+}
+
+.nav_link:first-child {
+    margin-left: 0;
+}
+
+.nav_link:hover {
+    font-size: 22px;
+}
+
+@media (max-width: 783px) {
+    .nav_link {
+        margin-left: 32px;
+    }
+}
+
+@media (max-width: 623px) {
+    /* Nav */
+    .nav {
+        display: none;
+        font-size: 16px;
+        width: 100%;
+        flex-direction: column;
+
+        background-color: #f21616e6;
+        text-align: right;
+
+        position: absolute;
+        right: 0;
+        top: 100%;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .nav_link {
+        padding: 9px 15px;
+    }
+}

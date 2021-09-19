@@ -1,0 +1,43 @@
+// compress: false, sourceMap: true
+
+@import "_vars";
+
+html,
+body {
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    font-family: "Mali", cursive;
+    font-weight: 700;
+    color: @white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(to right, #a60d0d, #f51717, #a60d0d);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+// Blocks
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/burger";
+@import "blocks/join";
+@import "blocks/register";
+@import "blocks/logo";
+@import "blocks/balls";
